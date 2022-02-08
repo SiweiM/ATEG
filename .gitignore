@@ -1,0 +1,6 @@
+*.pyc
+.idea/*
+*.pickle
+*.gz
+preprocessed_data/*
+output/
