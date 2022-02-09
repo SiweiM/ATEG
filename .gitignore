@@ -2,7 +2,8 @@
 .idea/*
 *.pickle
 *.gz
-preprocessed_data/*
 output/
+*.txt
+amazon_All_Beauty/
 *.ipynb
 code/__init__.py
