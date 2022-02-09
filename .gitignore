@@ -4,3 +4,5 @@
 *.gz
 preprocessed_data/*
 output/
+*.ipynb
+code/__init__.py

@@ -1,5 +1,6 @@
 # Aspect-based Textual Explanation Generation System
 ---
+Part of codes refer the codes from [Ruidan's paper](https://github.com/ruidan/Unsupervised-Aspect-Extraction)
 ## Data preprocessing
 Datasets are from [Amazon product data](https://nijianmo.github.io/amazon/index.html)
 The datasets used in the experiment are in dataset folder.
@@ -13,14 +14,14 @@ The preprocessed pickle files for each fold will be saved in the same folder.
 
 After this, please run the code in preprocessed_data/.
 ```
-python transform_txt.py $pickle file name before '_subset'
+python transform_txt.py $pickle_file_name_before_'_subset'
 ```
 The txt files for each fold experiment will be saved in folders under preprocessed_data/$pickle_file_name/.
 
 ## Aspect extraction
 Before aspect extraction, you need to generate the word embeddings first. Under code/, please run
 ```
-python word2vec.py $pickle file name before '_subset'
+python word2vec.py $pickle_file_name_before_'_subset'
 ```
 The trained word embeddings are saved in preprocessed_data/fold(1-5).
 After this, please type
@@ -41,7 +42,7 @@ To generate the explanation, please run the code under evaluation/:
 ```
 python preprocess.py -f $fold_number -as $number_of_aspect -d $pickle_file_name
 ```
-#Until here is done
+##The part after here is under implement, this part is not uploaded to github
 
 ```
 python generation.py -f $fold_number
